@@ -1,4 +1,3 @@
-# CICDLabsHOL
 
 Create a project on [VSTS](https://www.visualstudio.com/team-services/)
 
@@ -24,12 +23,12 @@ Now once the repository is imported , its time to setup a new Build.
 In search box find and add following tasks.
 - npm
 - grunt
-- Achive files
+- Archive files
 - Copy and publish build Artifacts
 
 ![D7.png][7]
 ---
-Rename the buld letschat-CI and select the Agent as Hosted VS2017
+Rename the build letschat-CI and select the Agent as Hosted VS2017
 
 ![D8.png][8]
 ---
@@ -85,11 +84,11 @@ Rename the release definition name.
 
 ![D21.png][21]
 ---
-Add artificat by selected Add artifact.
+Add artifact by selected Add artifact.
 
 ![D22.png][22]
 ---
-Now add new enviroment 
+Now add new environment 
 
 ![D23.png][23]
 ---
@@ -97,19 +96,19 @@ Name it Stage
 
 ![D24.png][24]
 ---
-Click Add doprdown and clone the enviroment.
+Click Add dropdown and clone the environment.
 
 ![D25.png][25]
 ---
-Name the new cloned enviroment as Production
+Name the new cloned environment as Production
 
 ![D26.png][26]
 ---
-Add variables  these will be refredn in Stage and Production task configuration
+Add variables. These will be used in Stage and Production task configuration
 
 ![D27.png][27]
 ---
-Add two vriables as shown below. Select Release as Production and Stage for respective variables. Note the website name is set to your app service name and stage is the Stage slot.
+Add two variables as shown below. Select Release as Production and Stage for respective variables. Note the website name is set to your app service name and stage is the Stage slot.
 
 ![D28.png][28]
 ---
@@ -117,7 +116,7 @@ Now select Stage Task and add Azure App Service Deploy task. Refer below image.
 
 ![D29.png][29]
 ---
-We will first depoy the app to the slot named Stage.Configure the app service deploy task. Select the Azure subscriotion and Authorize it. 
+We will first deploy the app to the slot named Stage.Configure the app service deploy task. Select the Azure subscription and Authorize it. 
 Seet the app service name as the variable that we created. Also check the Deploy to slot box.
 **Note:** If you get error, open VSTS link incognito or private browsing mode and create Azure Resource Manger Endpoint. Please refer this [link](https://docs.microsoft.com/en-us/vsts/build-release/concepts/library/service-endpoints)
 
@@ -125,16 +124,16 @@ Seet the app service name as the variable that we created. Also check the Deploy
 ---
 ![D31.png][31]
 ---
-Now select Production task and configure it to sawp the production and stage slots.
+Now select Production task and configure it to swap the production and stage slots.
 Save it.
 
 ![D32.png][32]
 ---
-Create a new rlease.
+Create a new release.
 
 ![D33.png][33]
 ---
-Select all enviroments.
+Select all environments.
 
 ![D34.png][34]
 ---
@@ -142,7 +141,7 @@ Visit the release
 
 ![D35.png][35]
 ---
-Depoly Stage manually.
+Deploy Stage manually.
 
 ![D36.png][36]
 
