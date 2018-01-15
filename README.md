@@ -170,6 +170,9 @@ You will get notification for approval.
 
 ![40.png][41]
 
+---
+Finally add settings.yml file and commit changes to vsts git repository. You should be able to see that new build is triggred and running.
+
 [1]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D1.png
 [2]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D2.png
 [3]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D3.png
