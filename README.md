@@ -154,6 +154,22 @@ The Stage should be successful. Once done you can browse `http://<WebAppName>-<S
 
 Now like stage Deploy the the Production. Once its done you should see the slots are swapped. Visit `http://<WebAppName>.azurewebsites.net` to verify it.
 
+---
+Edit build defition and enable the Continuous integration trigger.
+
+![D39.png][39]
+---
+
+Edit build defition and enable Continuous deployment trigger.
+
+![D40.png][40]
+---
+Before swapping the Stage with production we need to add an approval. So that we can verify that Stage is working fine and only after approval the swap should happen.
+Add post stage deployment condition. Approval.
+You will get notification for approval.
+
+![40.png][41]
+
 [1]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D1.png
 [2]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D2.png
 [3]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D3.png
@@ -192,3 +208,6 @@ Now like stage Deploy the the Production. Once its done you should see the slots
 [36]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D36.png
 [37]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D37.png
 [38]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D38.png
+[39]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D39.png
+[40]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D40.png
+[41]:https://github.com/krishnaji/CICDLabsHOL/blob/master/D41.png
